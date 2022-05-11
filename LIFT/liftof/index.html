@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Manrope&family=Poppins&family=Saira:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto ROCKETSEAT - LIFTOFF">
+    <title>Document</title>
+</head>
+    <body>
+        <header id="header">
+            <div class="center">
+                <nav>
+                    <div class="logo"><h1>BeautySalon</h1></div>
+                    <div class="menu">
+                        <i class="fas fa-bars open"></i>
+                       
+
+                        <ul class="container">
+                            <i class="fa-solid fa-xmark close"></i>
+
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#contsct">Contato</a></li>
+                        </ul>
+                    
+                    </div>
+                </nav>
+            </div>
+          </div>
+      </header>
+ 
+        <main>
+            <section class="section" id="home">
+                <div class="container grid">
+                   <div class="image">
+                    <img src="imgs/cabelereira.jpg" alt="imagem de cabelereira com cliente">
+                   </div>
+
+                   <div class="text">
+                       <h1 class="title">Saúde natural para seus cabelos</h1>
+                       <br>
+                       <p class="content">Salão exclusivo localizado em São Paulo, especializado em tratamentos naturais</p>.
+                       <br>
+                       <a href="#" class="button" onclick="modal.open()">Agende seu horário</a>
+                   </div>
+                </div>
+            </section>
+
+            <div class="modal-overlay">
+                <div class="modal">
+                    <h2>Entre em contato conosco</h2>
+
+                    <form method="get">
+                        <input type="text" id="nome" placeholder="Digite o seu nome" required>
+                        <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
+                        <input type="email"  id="mail" placeholder="Digite o se email" required>
+                        <textarea id="msg" cols="30" rows="10" placeholder="Digite sua mesmagem"></textarea>
+                        <br>
+                        <button type="submit" id="enviar" onclick="validar()">Enviar</button>
+                        <button type="reset" id="cancelar" onclick="modal.close()">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+
+            <section class="section" id="about">
+                <div class="center">
+                    <div class="content">
+                        <h2 class="title">Quem somos</h2>
+                        <br>
+                        <p class="text">Nunc dictum eu ipsum non aliquet. Etiam vitae dolor vitae arcu tempor faucibus ac id felis. Curabitur vel nisi at dolor pretium iaculis. Pellentesque posuere ipsum sed orci cursus ultricies. Praesent ut ligula ligula. Donec ultricies, sapien pharetra aliquam pretium, tortor odio suscipit quam, consequat lobortis sem diam vestibulum ligula. Etiam gravida dui ut elit consequat, non sollicitudin odio mattis. In non pulvinar lorem, vestibulum blandit sem. Aliquam a congue orci. Vivamus ut libero diam. Nulla facilisi. Nulla sodales augue id lorem molestie sodales quis id ipsum. Ut justo lectus, viverra eu luctus nec, rutrum consequat ipsum.</p>
+                        <br>
+                        <p class="text"> Mauris justo justo, egestas in pharetra ac, porta sit amet ligula. In eu lobortis ligula. Vivamus a sodales magna, fringilla aliquet neque. Duis eu neque eleifend, condimentum velit ac, vehicula augue. Nam sed est massa. Morbi facilisis massa id egestas sodales. Duis sodales augue quis congue hendrerit. Quisque vitae dolor odio. Suspendisse maximus volutpat ex, a placerat nisi. Vivamus porta suscipit risus. Maecenas eget varius neque, in condimentum lorem. Vestibulum sit amet leo sed enim rutrum venenatis a id odio. Integer nec fermentum mauris. Aliquam tristique metus eget tortor pharetra sagittis. Aenean aliquet convallis eros, 
+                            eget consectetur turpis. Etiam lacinia mi vel augue efficitur finibus.</p>    
+                    <br> 
+                       <p class="text"> Mauris quis tortor nunc. Cras tincidunt, tellus eu dictum fermentum, purus massa eleifend lectus, eu eleifend urna tortor vitae mauris. Nullam a enim a nibh ultrices volutpat. Curabitur urna justo, tempor a nisi quis, vehicula commodo libero. Etiam sed placerat enim. Nunc blandit augue sodales viverra dapibus. Donec posuere cursus lorem, non accumsan velit hendrerit eu. Nam facilisis velit metus, sit amet vehicula magna tincidunt ac.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+              <div class="container grid">
+                    <h2 class="title">Serviços oferecidos</h2>
+                  <div class="cards">
+                      <div class="card grid">
+                        <h3 class="title">Terapia capilar</h3>
+                        <p>Mauris justo justo, egestas in pharetra ac, porta sit amet ligula.</p>
+                          <div class="icon">
+                           <img src="icons/hair.png" alt="hair-icon">
+                          </div>
+                              
+                              <div class="card grid">
+                                <h3 class="title">Cortes</h3>
+                                <p>Mauris justo justo, egestas in pharetra ac, porta sit amet ligula.</p>
+                                <div class="icon">
+                                   <img src="icons/scissors.png" alt="scissors-icon">
+                                </div>
+
+                                <div class="card grid">
+                                    <h3 class="title">Tratamentos</h3>
+                                        <p>Mauris justo justo, egestas in pharetra ac, porta sit amet ligula.</p>
+                                    <div class="icon">
+                                        
+                                    </div>
+                              </div>
+                        </div>
+                   </div>
+               </div>
+          </section>
+
+          <section class="section " id="testimonials">
+              <h2 class="título">Depoimentos</h2>
+               <div class="container  grid">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>
+                                Nunc dictum eu ipsum non aliquet. Etiam vitae dolor vitae arcu tempor faucibus ac id felis. Curabitur vel nisi at dolor pretium iaculis. Pellentesque posuere ipsum sed orci cursus ultricies.   
+                            </p>
+                        </blockquote>
+                        <cite>
+                            <img src="imgs/Vanessa.jpg" alt="">
+                            <p>Vanessa Souza Santos</p>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>
+                                Nunc dictum eu ipsum non aliquet. Etiam vitae dolor vitae arcu tempor faucibus ac id felis. Curabitur vel nisi at dolor pretium iaculis. Pellentesque posuere ipsum sed orci cursus ultricies.   
+                            </p>
+                        </blockquote>
+                        <cite>
+                            <img src="imgs/Patrícia.jpg" alt="">
+                            <p>Patrícia Barbosa</p>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>
+                                Nunc dictum eu ipsum non aliquet. Etiam vitae dolor vitae arcu tempor faucibus ac id felis. Curabitur vel nisi at dolor pretium iaculis. Pellentesque posuere ipsum sed orci cursus ultricies.   
+                            </p>
+                        </blockquote>
+                        <cite>
+                            <img src="imgs/Fernando.jpg" alt="">
+                            <p>Fernando Silva</p>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>
+                                Nunc dictum eu ipsum non aliquet. Etiam vitae dolor vitae arcu tempor faucibus ac id felis. Curabitur vel nisi at dolor pretium iaculis. Pellentesque posuere ipsum sed orci cursus ultricies.   
+                            </p>
+                        </blockquote>
+                        <cite>
+                            <img src="imgs/Antônio.jpg" alt="">
+                            <p>Antônio Pereira</p>
+                        </cite>
+                    </div>
+               </div>
+          </section>
+         </main>
+            <i class="fa-solid fa-circle-arrow-up" id="arrow" onclick="sobe()"></i>
+         <footer>
+            <h2 class="social">Nossas redes sociais</h2>
+            <br>
+            <ul class="social-net-mídia">
+               <li><i class="fa-brands fa-facebook-square"></i>Facebook.com/beauty_salon</li>
+               <li><i class="fa-brands fa-instagram-square"></i>@beauty</li>
+            </ul>
+         </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
